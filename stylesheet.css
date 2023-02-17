@@ -1,0 +1,132 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif; */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+body h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.frame {
+  border: 1px solid white;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.wavePos1 {
+  margin-left: -5rem;
+  margin-top: 8rem;
+}
+.wavePos2 {
+  margin-left: -5rem;
+  margin-top: 8rem;
+}
+.wavePos3 {
+  margin-left: -25rem;
+  margin-top: 9rem;
+}
+
+.water {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+.blue1 {
+  background-color: #1492cd;
+}
+.blue2 {
+  background-color: #17a5e7;
+}
+.blue3 {
+  background-color: #78cffa;
+}
+
+.water1 {
+  animation: 2s wave 0.2s infinite linear;
+}
+.water2 {
+  animation: 2s wave 0.4s infinite linear;
+  margin-left: 10px;
+}
+.water3 {
+  animation: 2s wave 0.6s infinite linear;
+  margin-left: 20px;
+}
+.water4 {
+  animation: 2s wave 0.8s infinite linear;
+  margin-left: 30px;
+}
+.water5 {
+  animation: 2s wave 1s infinite linear;
+  margin-left: 40px;
+}
+.water6 {
+  animation: 2s wave 1.2s infinite linear;
+  margin-left: 50px;
+}
+.water7 {
+  animation: 2s wave 1.4s infinite linear;
+  margin-left: 60px;
+}
+.water8 {
+  animation: 2s wave 1.6s infinite linear;
+  margin-left: 70px;
+}
+.water9 {
+  animation: 2s wave 1.8s infinite linear;
+  margin-left: 80px;
+}
+.water10 {
+  animation: 2s wave 2s infinite linear;
+  margin-left: 90px;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.textsInfo {
+  padding: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.textsInfo p {
+  text-align: center;
+}
+
+.textsInfo h1 {
+  color: #f0db4f;
+}
